@@ -37,11 +37,17 @@ You can skip steps 1,2,5 by simple downloading and unzip this repo to somewhere 
 9. Finally, add the following to Project->[name-of-project] Properties->Linker->Input
 
 pvt.cppan.demo.intel.opencv.core-3.2.0.lib
+
 pvt.cppan.demo.intel.opencv.highgui-3.2.0.lib
+
 pvt.cppan.demo.intel.opencv.imgproc-3.2.0.lib
+
 pvt.cppan.demo.intel.opencv.imgcodecs-3.2.0.lib
+
 pvt.cppan.demo.intel.opencv.contrib.text-3.2.0.lib
+
 pvt.cppan.demo.intel.opencv.videoio-3.2.0.lib
+
 
 10. An example VS2017 solution file is available in this repo under the opencv-cppan folder.
 
