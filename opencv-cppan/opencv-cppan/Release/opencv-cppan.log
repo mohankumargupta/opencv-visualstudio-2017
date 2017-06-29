@@ -1,0 +1,8 @@
+﻿  moo.cpp
+moo.cpp(42): warning C4102: 'cv': unreferenced label
+  Generating code
+  2 of 138 functions ( 1.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  opencv-cppan.vcxproj -> C:\Users\mohan\Documents\Visual Studio 2017\Projects\opencv-cppan\Release\opencv-cppan.exe

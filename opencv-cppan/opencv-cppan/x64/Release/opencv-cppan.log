@@ -1,0 +1,2 @@
+﻿  moo.cpp
+pvt.cppan.demo.intel.opencv.highgui-3.2.0.lib(pvt.cppan.demo.intel.opencv.highgui-3.2.0.dll) : fatal error LNK1112: module machine type 'X86' conflicts with target machine type 'x64'
