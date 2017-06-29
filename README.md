@@ -6,6 +6,10 @@ particularly with Tesseract integration with OpenCV.
 Then stumbled across CPPAN. 
 
 # Instructions
+
+These are the steps I took to build opencv, opencv-contrib and dependencies. 
+You can skip steps 1,2,5 by simple downloading and unzip this repo to somewhere on your computer.
+
 1. Install CPPAN. Remember to put cppan.exe somewhere in the PATH.
    https://cppan.org/
    
@@ -14,8 +18,8 @@ Then stumbled across CPPAN.
 
 3. Install Tesseract OCR binaries for Windows
    https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows
-   Remember to set TESSDATA_PREFIX to C:\Program Files (x86)\Tesseract-OCR\tessdata
-   
+   Remember to set environment variable TESSDATA_PREFIX to C:\Program Files (x86)\Tesseract-OCR\tessdata
+      
 4. Install Visual Studio 2017 Community Edition (free one)
    - in the installer enable 
       * Visual Studio C++ core features
@@ -24,8 +28,24 @@ Then stumbled across CPPAN.
 	  * Visual C++ tools for CMake
 	  
 5. Run build.bat from Visual 2017 Developer command prompt. 
-6. The libraries in this repo are built for Release x86 configuration using instruction 1-5 above.
+
+
+6. The libraries in this repo are built for Release x86 configuration using instruction 1-5 above. 
 7. Include directories are also provided for opencv and opencv-contrib(text module).  
-8. Add the bin directory in this repo to the PATH.
+   In VS2017, Project->[name-of-project] Properties->C++->General->Additional Include Directories
+8. Add the bin directory in this repo to the PATH. Also add to Project->[name-of-project] Properties->Linker->General->Additional Library Dependencies
+9. Finally, add the following to Project->[name-of-project] Properties->Linker->Input
+
+pvt.cppan.demo.intel.opencv.core-3.2.0.lib
+pvt.cppan.demo.intel.opencv.highgui-3.2.0.lib
+pvt.cppan.demo.intel.opencv.imgproc-3.2.0.lib
+pvt.cppan.demo.intel.opencv.imgcodecs-3.2.0.lib
+pvt.cppan.demo.intel.opencv.contrib.text-3.2.0.lib
+pvt.cppan.demo.intel.opencv.videoio-3.2.0.lib
+
+10. An example VS2017 solution file is available in this repo under the opencv-cppan folder.
+
+
+
 
 
